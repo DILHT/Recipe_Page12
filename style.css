@@ -1,0 +1,182 @@
+.image{
+    border-radius: 20px;
+    max-width: 100%;
+}
+body{
+    background-color:hsl(30, 54%, 90%) ;
+    padding: 60px;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container1{
+    
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    width: 700px;
+    
+    border-radius: 20px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+ 
+@font-face {
+    font-family: OutfitB;
+    src: url(assets/fonts/outfit/static/Outfit-ExtraBold.ttf);
+}
+@font-face {
+    font-family: YoungF;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: outfits;
+    src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/static/Outfit-Light.ttf);
+}
+
+
+h1{
+    /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+    font-family:YoungF;
+    font-weight: 400;
+}
+
+.text{
+    /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+    font-family: outfit;
+    font-weight: 100;
+    color:hsl(30, 10%, 34%);
+}
+li{
+    color:hsl(30, 10%, 34%);
+    /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+    font-family: OutfitB;
+}
+
+.subrect{
+    background-color:hsla(332, 60%, 60%, 0.2);
+    padding: 10px;
+     
+    border-radius: 10px;
+    
+
+     
+}
+.headp{
+    
+    color: hsl(332, 51%, 32%) ;
+    padding-left:10px ;
+    /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+    font-family: outfits;
+    font-weight: 600
+}
+
+.subhead{
+    color: hsl(14, 45%, 36%);
+    /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+    font-family:YoungF ;
+    font-weight: 200;
+    
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+
+}
+
+.table td{
+    padding: 10px;
+}
+
+.table tr {
+    position: relative;
+  }
+
+.table tr:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color:hsl(30, 10%, 34%);
+  }
+
+  .coll{
+    color: hsl(14, 45%, 36%);
+    font-family: OutfitB;
+    font-weight: 200;
+  }
+
+.stylelist li::marker{
+     color: hsl(332, 51%, 32%);
+}
+
+.text1 li::marker{
+    color: hsl(14, 45%, 36%);
+}
+ 
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px;
+    }
+
+    .container1 {
+        width: 90%; 
+    }
+
+    h1 {
+        font-size: 24px;  
+    }
+
+    .text {
+        font-size: 14px;  
+    }
+
+    .headp {
+        font-size: 18px;  
+    }
+
+    .subhead {
+        font-size: 16px;  
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+
+    .text {
+        font-size: 12px;  
+    }
+
+    .headp {
+        font-size: 16px;  
+    }
+
+    .subhead {
+        font-size: 14px;  
+    }
+}
